@@ -19,11 +19,20 @@ public class Student {
         this.computer = new Computer();
     }
 
-
     public Student(String firstName, String lastName, int yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
+        this.course = new Course();
+        this.computer = new Computer();
+    }
+
+    public Student(String firstName, String lastName, int yearOfBirth, Course course, Computer computer) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.yearOfBirth = yearOfBirth;
+        this.course = course;
+        this.computer = computer;
     }
     
     public String getFirstName() {

@@ -7,6 +7,10 @@ public class Computer {
     private int hardDrive;
 
     public Computer() {
+        this.operatingSystem = "";
+        this.processTact = 0.0;
+        this.memory = 0.0;
+        this.hardDrive = 0;
     }
 
     public Computer(String operatingSystem, double processTact, double memory, int hardDrive) {
@@ -48,5 +52,10 @@ public class Computer {
         this.hardDrive = hardDrive;
     }
     
+    public void info() {
+        System.out.println("Process tact: " + getProcessTact());
+        System.out.println("Memory: " + getMemory());
+        System.out.println("Hard drive: " + getHardDrive());
+    }
     
 }

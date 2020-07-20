@@ -6,6 +6,9 @@ public class Course {
     private String codeName;
 
     public Course() {
+        this.name = "";
+        this.numberOfClasses = 0;
+        this.codeName = "";
     }
 
     public Course(String name, int numberOfClasses, String codeName) {
@@ -38,5 +41,8 @@ public class Course {
         this.codeName = codeName;
     }
     
-    
+    public void info() {
+        System.out.println("Course name: " + getName());
+        System.out.println("Course, number of classes: " + getNumberOfClasses());
+    }
 }
