@@ -1,9 +1,15 @@
 package student;
 
+import computer.Computer;
+import course.Course;
+
 public class Student {
     private String firstName;
     private String lastName;
     private int yearOfBirth;
+    
+    private Course course;
+    private Computer computer;
 
     public Student() {
     }
@@ -37,7 +43,22 @@ public class Student {
     public void setYearOfBirth(int yearOfBirth) {
         this.yearOfBirth = yearOfBirth;
     }
-    
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
+    public Computer getComputer() {
+        return computer;
+    }
+
+    public void setComputer(Computer computer) {
+        this.computer = computer;
+    }
     
     public void info() {
         System.out.println("First name: " + getFirstName());
