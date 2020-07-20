@@ -12,7 +12,13 @@ public class Student {
     private Computer computer;
 
     public Student() {
+        this.firstName = "";
+        this.lastName = "";
+        this.yearOfBirth = 0;
+        this.course = new Course();
+        this.computer = new Computer();
     }
+
 
     public Student(String firstName, String lastName, int yearOfBirth) {
         this.firstName = firstName;
